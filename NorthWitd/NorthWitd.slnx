@@ -1,0 +1,10 @@
+<Solution>
+  <Project Path="NorthWidtDW/NorthWidtDW.sqlproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="NorthWitdOLTP/NorthWitdOLTP.sqlproj">
+    <Build />
+    <Deploy />
+  </Project>
+</Solution>
