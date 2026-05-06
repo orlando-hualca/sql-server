@@ -1,0 +1,22 @@
+﻿CREATE TABLE [dbo].[DimEmployee](
+    [EmployeeKey] [int] IDENTITY(1,1) NOT NULL,
+    [EmployeeID] [int] NOT NULL,
+    [LastName] [nvarchar](20) NOT NULL,
+    [FirstName] [nvarchar](10) NOT NULL,
+    [FullName] AS (([FirstName] + ' ') + [LastName]),
+    [Title] [nvarchar](30) NULL,
+    [TitleOfCourtesy] [nvarchar](25) NULL,
+    [BirthDate] [datetime] NULL,
+    [HireDate] [datetime] NULL,
+    [Address] [nvarchar](60) NULL,
+    [City] [nvarchar](15) NULL,
+    [Region] [nvarchar](15) NULL,
+    [PostalCode] [nvarchar](10) NULL,
+    [Country] [nvarchar](15) NULL,
+    [HomePhone] [nvarchar](24) NULL,
+    [Extension] [nvarchar](4) NULL,
+    [ReportsTo] [int] NULL,
+    [RowCreatedDate] [datetime] NOT NULL CONSTRAINT [DF_DimEmployee_RowCreatedDate] DEFAULT (GETDATE()),
+    [RowModifiedDate] [datetime] NOT NULL CONSTRAINT [DF_DimEmployee_RowModifiedDate] DEFAULT (GETDATE()),
+    CONSTRAINT [PK_DimEmployee] PRIMARY KEY CLUSTERED ([EmployeeKey] ASC)
+);

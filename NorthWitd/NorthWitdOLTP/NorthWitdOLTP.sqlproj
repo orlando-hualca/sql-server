@@ -56,21 +56,23 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="Tablas" />
+    <Folder Include="Script" />
+    <Folder Include="Schema" />
+    <Folder Include="Schema\Tablas" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tablas\suppliers.sql" />
-    <Build Include="Tablas\categories.sql" />
-    <Build Include="Tablas\products.sql" />
-    <Build Include="Tablas\orders.sql" />
-    <Build Include="Tablas\employees.sql" />
-    <Build Include="Tablas\shippers.sql" />
-    <Build Include="Tablas\customerCustomerDemo.sql" />
-    <Build Include="Tablas\customerDemographics.sql" />
-    <Build Include="Tablas\employeeTerritories.sql" />
-    <Build Include="Tablas\orderDetails.sql" />
-    <Build Include="Tablas\region.sql" />
-    <Build Include="Tablas\territories.sql" />
-    <Build Include="Tablas\customers.sql" />
+    <Build Include="Schema\Tablas\categories.sql" />
+    <Build Include="Schema\Tablas\customerCustomerDemo.sql" />
+    <Build Include="Schema\Tablas\customerDemographics.sql" />
+    <Build Include="Schema\Tablas\customers.sql" />
+    <Build Include="Schema\Tablas\employees.sql" />
+    <Build Include="Schema\Tablas\employeeTerritories.sql" />
+    <Build Include="Schema\Tablas\orderDetails.sql" />
+    <Build Include="Schema\Tablas\orders.sql" />
+    <Build Include="Schema\Tablas\products.sql" />
+    <Build Include="Schema\Tablas\region.sql" />
+    <Build Include="Schema\Tablas\shippers.sql" />
+    <Build Include="Schema\Tablas\suppliers.sql" />
+    <Build Include="Schema\Tablas\territories.sql" />
   </ItemGroup>
 </Project>
