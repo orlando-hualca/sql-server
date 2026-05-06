@@ -1,5 +1,5 @@
-﻿CREATE TABLE [dbo].[Customers](
-    [CustomerID] [nchar](5) NOT NULL,
+﻿CREATE TABLE [dbo].[Suppliers](
+    [SupplierID] [int] IDENTITY(1,1) NOT NULL,
     [CompanyName] [nvarchar](40) NOT NULL,
     [ContactName] [nvarchar](30) NULL,
     [ContactTitle] [nvarchar](30) NULL,
@@ -10,6 +10,7 @@
     [Country] [nvarchar](15) NULL,
     [Phone] [nvarchar](24) NULL,
     [Fax] [nvarchar](24) NULL,
+    [HomePage] [nvarchar](max) NULL,
     [rowversion] [timestamp] NULL,
-    CONSTRAINT [PK_Customers] PRIMARY KEY CLUSTERED ([CustomerID] ASC)
+    CONSTRAINT [PK_Suppliers] PRIMARY KEY CLUSTERED ([SupplierID] ASC)
 )

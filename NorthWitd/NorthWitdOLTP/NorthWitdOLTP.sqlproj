@@ -59,6 +59,18 @@
     <Folder Include="Tablas" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tablas\Customers.sql" />
+    <Build Include="Tablas\suppliers.sql" />
+    <Build Include="Tablas\categories.sql" />
+    <Build Include="Tablas\products.sql" />
+    <Build Include="Tablas\orders.sql" />
+    <Build Include="Tablas\employees.sql" />
+    <Build Include="Tablas\shippers.sql" />
+    <Build Include="Tablas\customerCustomerDemo.sql" />
+    <Build Include="Tablas\customerDemographics.sql" />
+    <Build Include="Tablas\employeeTerritories.sql" />
+    <Build Include="Tablas\orderDetails.sql" />
+    <Build Include="Tablas\region.sql" />
+    <Build Include="Tablas\territories.sql" />
+    <Build Include="Tablas\customers.sql" />
   </ItemGroup>
 </Project>
