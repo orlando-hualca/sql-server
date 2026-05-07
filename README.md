@@ -7,11 +7,17 @@ El sistema gestiona las ventas de una empresa comercializadora de productos alim
 1. Modelo OLTP (normalizado hasta 3FN)
 
 [Customers] ──┐
+
               ├── [Orders] ──┐
+              
 [Employees] ──┘               ├── [OrderDetails] ── [Products] ── [Categories]
+
 [Shippers] ──────────────────┘                       │
+
                                                       └── [Suppliers]
+
 [Region] ── [Territories] ── [EmployeeTerritories] ───┘
+
 [CustomerDemographics] ── [CustomerCustomerDemo] ── [Customers]
 
 Script SQL de creación (OLTP)
@@ -22,8 +28,14 @@ El script crea la base de datos Northwind_OLTP, todas las tablas con sus claves 
 
 Diagrama dimensional
 
+
+
 [DimDate] ────────┐
+
 [DimCustomer] ────┤
+
 [DimProduct] ─────┼── [FactOrderDetails]
+
 [DimEmployee] ────┤
+
 [DimShipper] ─────┘
