@@ -1,41 +1,19 @@
-Dominio de negocio seleccionado: Ventas de productos (Northwind)
+# Northwind BI Solution - OLTP y Data Warehouse
 
-Alcance del sistema
+## Descripción
+Proyecto académico que implementa una base de datos transaccional (Northwind) normalizada hasta 3FN y un Data Warehouse en esquema estrella para análisis de ventas.
 
-El sistema gestiona las ventas de una empresa comercializadora de productos alimenticios. Permite registrar clientes, empleados, productos, categorías, proveedores, pedidos y sus líneas de detalle, así como la gestión de territorios y transportistas. El objetivo del Data Warehouse es analizar las ventas (cantidad, ingresos, descuentos) por cliente, producto, empleado, transportista y a lo largo del tiempo.
+## Modelos
+- **OLTP**: [Ver diagrama](OLTP_ER.png)
+- **Data Warehouse**: [Ver diagrama estrella](DW.png)
 
-1. Modelo OLTP (normalizado hasta 3FN)
+## Scripts SQL
+- OLTP: [carpeta scripts/OLTP](scripts/OLTP)
+- DW: [carpeta scripts/DW](scripts/DW)
 
-[Customers] ──┐
+## Despliegue
+1. Ejecutar scripts de OLTP en orden numérico.
+2. Ejecutar scripts de DW (crear base, tablas).
 
-              ├── [Orders] ──┐
-              
-[Employees] ──┘               ├── [OrderDetails] ── [Products] ── [Categories]
-
-[Shippers] ──────────────────┘                       │
-
-                                                      └── [Suppliers]
-
-[Region] ── [Territories] ── [EmployeeTerritories] ───┘
-
-[CustomerDemographics] ── [CustomerCustomerDemo] ── [Customers]
-
-Script SQL de creación (OLTP)
-
-El script crea la base de datos Northwind_OLTP, todas las tablas con sus claves primarias y foráneas (dentro del CREATE TABLE)
-
-2. Modelo Data Warehouse (Esquema estrella)
-
-Diagrama dimensional
-
-
-
-[DimDate] ────────┐
-
-[DimCustomer] ────┤
-
-[DimProduct] ─────┼── [FactOrderDetails]
-
-[DimEmployee] ────┤
-
-[DimShipper] ─────┘
+## Integrantes
+1. Orlando Hualca Yavi
