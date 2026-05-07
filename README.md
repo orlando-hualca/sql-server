@@ -4,12 +4,12 @@
 Proyecto académico que implementa una base de datos transaccional (Northwind) normalizada hasta 3FN y un Data Warehouse en esquema estrella para análisis de ventas.
 
 ## Modelos
-- **OLTP**: [Ver diagrama](OLTP_ER.png)
+- **OLTP**: [Ver diagrama](OLTP.png)
 - **Data Warehouse**: [Ver diagrama estrella](DW.png)
 
 ## Scripts SQL
-- OLTP: [carpeta scripts/OLTP](scripts/OLTP)
-- DW: [carpeta scripts/DW](scripts/DW)
+- OLTP: [carpeta scripts/OLTP](Schema/Tablas)
+- DW: [carpeta scripts/DW](Schema/Tablas)
 
 ## Despliegue
 1. Ejecutar scripts de OLTP en orden numérico.
