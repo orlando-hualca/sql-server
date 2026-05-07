@@ -8,8 +8,8 @@ Proyecto académico que implementa una base de datos transaccional (Northwind) n
 - **Data Warehouse**: [Ver diagrama estrella](DW.png)
 
 ## Scripts SQL
-- OLTP: [carpeta scripts/OLTP](/NorthWitd/NorthWitdOLTP/Schema/Tablas/)
-- DW: [carpeta scripts/DW](/NorthWitd/NorthWidtDW/Schema/Tablas/)
+- OLTP: [carpeta scripts/OLTP](/Archivos/ScripOLTP/oltp.sql)
+- DW: [carpeta scripts/DW](/Archivos/ScripDW/dw.sql)
 
 ## Despliegue
 1. Ejecutar scripts de OLTP en orden numérico.
