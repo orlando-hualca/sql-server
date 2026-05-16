@@ -1,0 +1,21 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Development" />
+    <BuildType Name="Release" />
+  </Configurations>
+  <Project Path="NW/NW_OLTP.sqlproj" Id="790ae122-63c9-4691-8bad-bb30a7a6a98f">
+    <BuildType Solution="Development|*" Project="Release" />
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="NW_DW/NW_DW.sqlproj" Id="f05eb985-eb2a-4d22-8327-ee6f077c3ef7">
+    <BuildType Solution="Development|*" Project="Release" />
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="SSIS_NW/SSIS_NW.dtproj" Type="c9674dcb-5085-4a16-b785-4c70dd1589bd">
+    <BuildType Project="Development" />
+    <Platform Project="?" />
+  </Project>
+</Solution>
