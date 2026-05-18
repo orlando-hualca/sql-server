@@ -12,12 +12,15 @@ Proyecto académico que implementa una base de datos transaccional (Northwind) n
 - DW: [carpeta scripts/DW](/Archivos/ScripDW/dw.sql)
 
 ## ETL
-- product: [Ver diagrama] (/Imagenes/product.png)
-- shipper: [Ver diagrama] (/Imagenes/shipper.png)
-- customer: [Ver diagrama] (/Imagenes/customer.png)
-- employee: [Ver diagrama] (/Imagenes/employee.png)
-- orders: [Ver diagrama] (/Imagenes/orders.png)
-- pruebas: [Ver pruebas] (/Imagenes/orders.png)
+- **Product**: [Ver diagrama](./Imagenes/product.png)
+- **Shipper**: [Ver diagrama](./Imagenes/shipper.png)
+- **Customer**: [Ver diagrama](./Imagenes/customer.png)
+- **Employee**: [Ver diagrama](./Imagenes/employee.png)
+- **Orders**: [Ver diagrama](./Imagenes/orders.png)
+- **Pruebas**:
+    -- **ListaOriginal Shipper**: [Ver](/Imagenes/Lista%20originalShipper.png)
+    -- **Update en Shipper**[Ver](/Imagenes/cambioShipper.png)
+    -- **Resultado**[Ver](/Imagenes/CambioRealizado.png)
 
 
 ## Despliegue
